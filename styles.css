@@ -33,3 +33,25 @@ h1 {
 h2 {
     margin-top: 20px;
 }
+
+img {
+    max-width: 100%; /* Ensure the image does not exceed the container width */
+    height: auto; /* Maintain the image's aspect ratio */
+    display: block; /* Remove default inline spacing */
+    margin-bottom: 20px; /* Add some spacing below the image */
+}
+
+.header {
+    background: linear-gradient(217deg, #d55467, #099df9, #f8c069); /* Header background color */
+    text-align: center; /* Center the content within the header */
+    padding: 10px 0; /* Add padding for visual separation */
+}
+
+.logo {
+    max-width: 150px; /* Set the maximum width */
+    max-height: 100px; /* Set the maximum height */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,35 @@
+body {
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1a1a1a; /* Dark background */
+    color: #f8fffd; /* Light text color */
+}
+
+h1, h2 {
+    color: #099df9; /* Vibrant blue heading color */
+    border-bottom: 2px solid #099df9;
+    padding-bottom: 8px;
+}
+
+p {
+    line-height: 1.7;
+}
+
+a {
+    color: #ffbb60; /* Link color */
+    text-decoration: none; /* Remove underlines from links */
+}
+
+a:visited {
+    color: #a42b38; /* Visited link color */
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 20px;
+}

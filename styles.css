@@ -41,6 +41,42 @@ img {
     margin-bottom: 20px;
 }
 
+/* Search Form Styles */
+#searchForm {
+    margin-top: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #099df9; /* Blue color for the label */
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #099df9; /* Blue border for the input */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #099df9; /* Blue background for the button */
+    color: #fff; /* White text color for the button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0c7bbf; /* Darker blue on hover */
+}
+
+/* End of Search Form Styles */
+
 .header {
     background: linear-gradient(217deg, #d55467, #099df9, #f8c069);
     text-align: center;

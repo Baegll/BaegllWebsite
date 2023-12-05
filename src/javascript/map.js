@@ -6,14 +6,14 @@ L.imageOverlay(imageUrl, imageBounds).addTo(map);
 
 var customIcon1 = L.icon({
     iconUrl: 'img/LogoTransparent.png',
-    iconSize: [32, 32],
+    iconSize: [48, 48],
     iconAnchor: [16, 16],
     popupAnchor: [0, -16]
 });
 
 var customIcon2 = L.icon({
     iconUrl: 'img/LogoTransparent.png',
-    iconSize: [32, 32],
+    iconSize: [48, 48],
     iconAnchor: [16, 16],
     popupAnchor: [0, -16]
 });

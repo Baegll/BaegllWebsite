@@ -18,12 +18,12 @@ p {
 }
 
 a {
-    color: #ffbb60; /* Link color */
-    text-decoration: none; /* Remove underlines from links */
+    color: #ffbb60;
+    text-decoration: none;
 }
 
 a:visited {
-    color: #a42b38; /* Visited link color */
+    color: #a42b38;
 }
 
 h1 {
@@ -35,23 +35,27 @@ h2 {
 }
 
 img {
-    max-width: 100%; /* Ensure the image does not exceed the container width */
-    height: auto; /* Maintain the image's aspect ratio */
-    display: block; /* Remove default inline spacing */
-    margin-bottom: 20px; /* Add some spacing below the image */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
 }
 
 .header {
-    background: linear-gradient(217deg, #d55467, #099df9, #f8c069); /* Header background color */
-    text-align: center; /* Center the content within the header */
-    padding: 10px 0; /* Add padding for visual separation */
+    background: linear-gradient(217deg, #d55467, #099df9, #f8c069);
+    text-align: center;
+    padding: 10px 0;
 }
 
 .logo {
-    max-width: 150px; /* Set the maximum width */
-    max-height: 100px; /* Set the maximum height */
+    max-width: 150px;
+    max-height: 100px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+}
+
+.leaflet-container {
+    background-color: #1a1a1a;
 }

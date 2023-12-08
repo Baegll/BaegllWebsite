@@ -11,10 +11,10 @@
         <div class="header">
             <img src="img/LogoTransparent.png" alt="West Marches Discord logo" class="logo">
         </div>
-        <form id="searchForm" onsubmit="searchContent(); return false;">
-            <input type="text" id="searchInput" name="searchInput" placeholder="Search the Realm">
-            <button type="submit">Go</button>
+        <form id="searchForm">
+            <input type="text" id="searchInput" name="searchInput" placeholder="Query the Wizard" oninput="showSuggestions()">
         </form>
+        <div id="suggestionContainer"></div>
 
         <h1>Welcome to the Fantasy Realm</h1>
         <p>
@@ -34,15 +34,9 @@
             <a href="lorem.html">Lorem</a>,
             <a href="ipsum.html">Ipsum</a>,
             <a href="dolor.html">Dolor</a>,
-            <a href="sit.html">Sit</a>
+            <a href="sit.html">Sit</a>,
             <a href="interactive-map.html">World Map</a>
         </p>
-
-        <script>
-            function searchContent() {
-                var searchQuery = document.getElementById('searchInput').value.toLowerCase();
-                console.log('Search query:', searchQuery);
-            }
-        </script>
+        <script src="src/javascript/search.js"></script>
     </body>
 </html>

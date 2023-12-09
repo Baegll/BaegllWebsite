@@ -27,22 +27,16 @@ function showSuggestions() {
     if (matchingPages.length > 0) {
         matchingPages.forEach(function (page) {
             var suggestionItem = document.createElement('div');
-            
-            // Create an anchor element with the corresponding URL
             var link = document.createElement('a');
             link.href = page.url;
             link.className = 'suggestion';
             link.textContent = page.title;
 
-            // Add a click event listener to load content
             link.addEventListener('click', function () {
                 loadContent(page.url);
             });
 
-            // Append the link to the suggestion item
             suggestionItem.appendChild(link);
-
-            // Append the suggestion item to the container
             suggestionContainer.appendChild(suggestionItem);
         });
 

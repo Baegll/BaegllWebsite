@@ -3,12 +3,12 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #1a1a1a; /* Dark background */
-    color: #f8fffd; /* Light text color */
+    background-color: #1a1a1a;
+    color: #f8fffd;
 }
 
 h1, h2 {
-    color: #099df9; /* Vibrant blue heading color */
+    color: #099df9;
     border-bottom: 2px solid #099df9;
     padding-bottom: 8px;
 }
@@ -31,7 +31,12 @@ h1 {
 }
 
 h2 {
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.left-column {
+    margin-right: 10px;
 }
 
 img {
@@ -42,7 +47,7 @@ img {
 }
 
 /* Search Form Styles */
-#searchForm {
+#search-form {
     margin-top: 20px;
     text-align: center;
 }
@@ -50,29 +55,61 @@ img {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #099df9; /* Blue color for the label */
+    color: #099df9;
 }
 
 input[type="text"] {
     width: 60%;
     padding: 8px;
     margin-bottom: 10px;
-    border: 1px solid #099df9; /* Blue border for the input */
+    border: 1px solid #099df9;
     border-radius: 5px;
     box-sizing: border-box;
 }
 
 button {
     padding: 8px 15px;
-    background-color: #099df9; /* Blue background for the button */
-    color: #fff; /* White text color for the button */
+    background-color: #099df9;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #0c7bbf; /* Darker blue on hover */
+    background-color: #0c7bbf;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    padding: 8px;
+    text-align: center;
+}
+
+td {
+    padding: 8px;
+    text-align: center;
+}
+
+td:nth-child(odd) {
+    border-right: 2px solid #ffbb60;
+    text-align: left;
+}
+
+td:nth-child(even) {
+    border-right: 2px solid #ffbb60;
+}
+
+td:nth-child(1) {
+    border-left: 1mm ridge #ffbb60;
+}
+
+td:nth-child(4) {
+    border-right: 1mm ridge #ffbb60;
 }
 
 .loading-indicator {
@@ -82,7 +119,7 @@ button:hover {
     width: 20px;
     height: 20px;
     animation: spin 1s linear infinite;
-    margin: 20px auto; /* Adjust margin as needed */
+    margin: 20px auto;
 }
 
 @keyframes spin {
@@ -114,3 +151,95 @@ button:hover {
 .leaflet-container {
     background-color: #1a1a1a;
 }
+
+/* Character pages styles*/
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+.character-text {
+    max-width: 70%;
+    margin-right: 10px;
+}
+
+.corner-image {
+    max-width: 30%;
+    max-height: 100%;
+    border: 3px ridge #ffbb60;
+}
+
+.traits-box{
+    display: flex
+}
+
+.traits {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    background-color: #1f1f1f;
+}
+
+.character-stats {
+    max-width: 40%;
+    text-align: center;
+}
+
+.stat {
+    margin-bottom: 4px;
+    border: 2px solid #ffbb60;
+    border-radius: 8px;
+    border-left: 2mm ridge #ffbb60;
+    padding: 8px;
+    width: 100%;
+}
+
+.description-table {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-collapse: collapse;
+    gap: 10px;
+    padding: 0px;
+    border-right: 1mm ridge #f8c069;
+    border-radius: 8px;
+}
+
+.description-cell {
+    padding: 0px;
+    text-align: left;
+}
+
+.tab-container {
+    display: flex;
+}
+
+.tab {
+    padding: 10px;
+    cursor: pointer;
+    border: 2px solid #f8c069;
+    border-radius: 5px 5px 0 0;
+    background-color: #1a1a1a;
+}
+
+.content {
+    display: none;
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+    background-color: #1a1a1a;
+}
+
+.content.active {
+    display: block;
+}
+
+.pdf-embed {
+    width: 100%;
+    height: 100%;
+}
+
+/* End of Character pages styles */

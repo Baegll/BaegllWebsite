@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fantasy World Wiki - General Info</title>
+        <link rel="stylesheet" href="../../styles.css">
+        <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+
+        <div class="tab-container">
+            <div class="tab" onclick="toggleTab('tab1')">Overview</div>
+            <div class="tab" onclick="toggleTab('tab2')">Character Sheet</div>
+        </div>
+    
+        <div class="content active" id="tab1">
+            <div class="container">
+                <div class="character-text">
+                    <h2>Name</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Quisque accumsan ante ut ligula accumsan, vel aliquam orci 
+                        ullamcorper. Integer euismod, tortor a pulvinar dapibus, 
+                        turpis nisi fermentum dui, eu accumsan massa purus in purus.
+
+                    </p>
+                </div>
+                <img src="../../img/Characters/character.png" alt="Character profile image" class="corner-image">
+            </div>
+    
+            <h2>Characteristics</h2>
+    
+            <div class="container">
+                <div class="left-column">
+                    <div class="traits-box">
+                        <div class="traits">
+                            Personality Traits
+                            <br><br>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Quisque accumsan ante ut ligula accumsan, vel aliquam orci 
+                            ullamcorper. Integer euismod, tortor a pulvinar dapibus, 
+                            turpis nisi fermentum dui, eu accumsan massa purus in purus.
+                        </div>
+                        <div class="traits">
+                            Ideals
+                            <br><br>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Quisque accumsan ante ut ligula accumsan, vel aliquam orci 
+                            ullamcorper. Integer euismod, tortor a pulvinar dapibus, 
+                            turpis nisi fermentum dui, eu accumsan massa purus in purus.
+                        </div>
+                    </div>
+                    <div class="traits-box">
+                        <div class="traits">
+                            Bonds
+                            <br><br>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Quisque accumsan ante ut ligula accumsan, vel aliquam orci 
+                            ullamcorper. Integer euismod, tortor a pulvinar dapibus, 
+                            turpis nisi fermentum dui, eu accumsan massa purus in purus.
+                        </div>
+                        <div class="traits">
+                            Flaws
+                            <br><br>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Quisque accumsan ante ut ligula accumsan, vel aliquam orci 
+                            ullamcorper. Integer euismod, tortor a pulvinar dapibus, 
+                            turpis nisi fermentum dui, eu accumsan massa purus in purus.
+                        </div>
+                    </div>
+                </div>
+                <div class="character-stats">
+                    <div class="stat">Strength: 10</div>
+                    <div class="stat">Dexterity: 10</div>
+                    <div class="stat">Constitution: 10</div>
+                    <div class="stat">Intelligence: 10</div>
+                    <div class="stat">Wisdom: 10</div>
+                    <div class="stat">Charisma: 10</div>
+                </div>
+            </div>
+    
+            <h2>Descriptions</h2>
+            <div class="container">
+                <div class="left-column">
+                    <table>
+                        <tr>
+                            <td>Name</td>
+                            <td>name</td>
+                            <td>Class</td>
+                            <td>class</td>
+                        </tr>
+                        <tr>
+                            <td>Race</td>
+                            <td>race</td>
+                            <td>Level</td>
+                            <td>level</td>
+                        </tr>
+                        <tr>
+                            <td>Background</td>
+                            <td>background</td>
+                            <td>Gender</td>
+                            <td>gender</td>
+                        </tr>
+                        <tr>
+                            <td>Alignment</td>
+                            <td>alignment</td>
+                            <td>Pronouns</td>
+                            <td>pronouns</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="right-column">
+                    <div class="traits-box">
+                        <div class="traits">
+                            Other Features and Traits
+                            <br><br>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Quisque accumsan ante ut ligula accumsan, vel aliquam orci
+                             ullamcorper. Integer euismod, tortor a pulvinar dapibus, 
+                             turpis nisi fermentum dui, eu accumsan massa purus in purus.
+                        </div>
+                        <div class="traits">
+                            Allies and Organizations
+                            <br><br>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Quisque accumsan ante ut ligula accumsan, vel aliquam orci 
+                            ullamcorper. Integer euismod, tortor a pulvinar dapibus, 
+                            turpis nisi fermentum dui, eu accumsan massa purus in purus.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="content" id="tab2">
+            <object data="character.pdf" type="application/pdf" width="100%" height="500px">
+            </object>
+        </div>
+    
+        <script>
+            // Set the default active tab
+            document.getElementById('tab1').classList.add('active');
+    
+            function toggleTab(tabId) {
+                // Hide all content divs
+                var contentDivs = document.querySelectorAll('.content');
+                contentDivs.forEach(function (div) {
+                    div.classList.remove('active');
+                });
+    
+                // Show the selected content div
+                var selectedTab = document.getElementById(tabId);
+                selectedTab.classList.add('active');
+            }
+        </script>
+
+    </body>
+</html>
